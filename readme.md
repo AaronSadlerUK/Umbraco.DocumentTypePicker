@@ -1,6 +1,6 @@
 # RB: Document Type Picker
 
-The Document Type Picker package...
+The Document Type Picker package allows editors to choose a list of Document Types to be saved against a content page. This could be used for things like site map exclusions or navigation lists.
 
 ## Set Up
 
@@ -8,7 +8,21 @@ Create a new data type using the RB.DocumentTypePicker property editor. Add a ne
 
 ## Converter
 
+When using a property value on a template, add the following code to create a strongly type version of the key value editor property value.
 
+    @{
+        IEnumerable<string> documentTypes = CurrentPage.GetPropertyValue<IEnumerable<string>>("alias");
+    }
+	
+Once converted, you will be able to choose single items and loop through each. For example:
+
+    @{
+        // Loop through each alias
+        foreach (var documentType in documentTypes)
+        {
+            @documentType;
+        }
+    }
 
 ## Contributing
 
