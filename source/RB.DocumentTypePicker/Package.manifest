@@ -4,15 +4,12 @@
       "name": "Document Type Picker",
       "alias": "RB.DocumentTypePicker",
       "editor": {
-        "view": "~/App_Plugins/DocumentTypePicker/",
+        "view": "~/App_Plugins/DocumentTypePicker/DocumentTypePickerView.html",
         "valueType": "JSON"
       }
 	}
   ],
-  "css": [
-    "~/App_Plugins/DocumentTypePicker/"
-  ],
   "javascript": [
-    "~/App_Plugins/DocumentTypePicker/"
+    "~/App_Plugins/DocumentTypePicker/DocumentTypePickerController.js"
   ]
 }
