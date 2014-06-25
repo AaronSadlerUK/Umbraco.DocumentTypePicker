@@ -48,13 +48,13 @@ Create a new data type using the RB.DocumentTypePicker property editor. Add a ne
 
 ## Converter
 
-When using a property value on a template, add the following code to create a strongly type version of the key value editor property value.
+When using a property value on a template, add the following code to return and use a list of document type aliases.
 
     @{
         IEnumerable<string> documentTypes = CurrentPage.GetPropertyValue<IEnumerable<string>>("alias");
     }
 	
-Once converted, you will be able to choose single items and loop through each. For example:
+Once converted, you will be able to select or loop through each document type. For example:
 
     @{
         // Loop through each alias
