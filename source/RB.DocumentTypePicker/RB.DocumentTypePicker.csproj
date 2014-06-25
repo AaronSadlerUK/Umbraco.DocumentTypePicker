@@ -201,6 +201,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Api\DocumentTypePickerApiController.cs" />
+    <Compile Include="Converters\DocumentTypePickerValueConvertor.cs" />
+    <Compile Include="Models\DocumentTypePickerDocType.cs" />
+    <Compile Include="Models\DocumentTypePickerDocTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -210,15 +214,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controllers\DocumentTypePickerController.js" />
     <Content Include="Package.xml" />
+    <Content Include="Views\DocumentTypePickerView.html" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Converters\" />
-    <Folder Include="Models\" />
-    <Folder Include="Styles\" />
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\..\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\..\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
